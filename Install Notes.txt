@@ -1,0 +1,23 @@
+eCtune PRI edition(Pro_Ostrich) 0.0.2.3 r17
+
+Additional Installation notes may be found here: http://forum.ectune.com/viewtopic.php?t=5
+
+
+Installation Instructions.
+
+1. Install eCtune and run force update (must be run in administrator mode)
+2. Delete original eCtune.exe file.
+3. Copy eCtune.exe and License.xml from archive to install directory (default c:\Program Files\eCtune\)
+4. Run eCtune.exe
+5. On the toolbar click Emulator and Connect (Ctrl+Shift+E)
+6. Click Moates Emulator Info
+7. Copy the Serial ID
+8. Open License.xml file with notepad
+9. Paste Serial ID in Ostrich field    <License Ostrich0="1111111111111111" />
+10. Save License.xml and close
+11. Restart eCtune Program
+12. Click Moates Emulator Info
+13. Click Request Lic
+
+Your Moates Ostrich should now be registered to eCtune. - you can have up to 10 Ostrii registered at any time.
+You can test that its working by creating a new base map and then Ctrl+Shift+P Put Base Rom and Calibration, and then Ctrl+Shift+V Verify Rom
