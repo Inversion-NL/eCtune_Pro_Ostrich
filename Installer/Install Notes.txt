@@ -3,12 +3,13 @@ eCtune PRI edition(Pro_Ostrich) 0.0.2.3 r17
 Additional Installation notes may be found here: http://forum.ectune.com/viewtopic.php?t=5
 
 
-Installation Instructions.
-
+INSTALLATION INSTRUCTIONS :
 1. Install eCtune and run force update (must be run in administrator mode)
 2. Delete original eCtune.exe file.
-3. Copy eCtune.exe and License.xml from archive to install directory (default c:\Program Files\eCtune\)
+3. Copy eCtune.exe and License.xml from CRACK archive to install directory (default c:\Program Files\eCtune\)
 4. Run eCtune.exe
+
+TO LISCENCE A EMULATOR :
 5. On the toolbar click Emulator and Connect (Ctrl+Shift+E)
 6. Click Moates Emulator Info
 7. Copy the Serial ID

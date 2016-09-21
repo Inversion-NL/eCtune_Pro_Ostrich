@@ -1,0 +1,268 @@
+0.0.2.2 r1
+- rom 0.0.59
+	-Fixed ign cylinder bug -X
+	-New safer/faster ISR - X
+
+- rom 0.0.60
+	-Fixed ign cylinder bug -X
+	-Tipout settings - X
+	-New safer/faster ISR - X
+	-Debug IGN spike(civic_tsi, burgermass) - fixed
+		-was visual only mem for display fnl got overwritten..
+	-ICM error only disable with IGN cut - X
+	-Bug that fuelcut didn't go to 0 FV -X
+
+- Bug rpm vs tps fuel cut table not showing after 61 update - X
+- Rev limiter settings disable all ecu limiters - X
+- peak boost value not working(burgermass/gaskleppie) - X
+- peak value prase rouding(civic_tsi) - X
+- icon for condition recording enable(calvin) - x
+- Delete column doesn't work as it should. It does delete the column but it also add a column at the end with the max    load(1,Civic_tsi), so when you have 24 columns and want to add a column in the vacuum portion, you can't unless you copy& paste    everything yourself 1 column to the right. - X
+- Insert column messes up the table if you already have 24 columns in your table.(2,civic_tsi) - X
+- TPS-Tip-in Trim window:
+  All fields in the window cause an IIE error.(JaredKaragen) - X
+- Service Check Connector:
+- "Custom Lock" field gives an IIE Error.(JaredKaragen) - X
+- "TPS Tip-in fuel corrections" section of the settings pane; all 3 fields cause an error/crash(JaredKaragen) - X
+- Fuelcut disable checkbox(JaredKaragen) -X
+- graph fuel value min max adj(cj) - X
+- graph injector duration value min/max(cj) - X
+
+------------------
+0.0.2.2 r2
+- rom 0.0.61
+	-Fixed ign cylinder bug -X
+	-Park input removed from vtec routine(calvin) - X
+	-Fuelcut settings replaced load value cut off table replaced with one fixed value(calvin) - X
+	-ICM error only disable with IGN cut - X
+	-Tipout mimumum rpm(cj) -X
+	-ICM error only disable with IGN cut - X
+	-IAC duty adjust when AC on(FAH) - X
+	-Debug IGN spike(civic_tsi, burgermass) - X
+		-Note: was visual only mem for display fnl got overwritten..
+	-Bug that fuelcut didn't go to 0 FV -X
+	-Test MBC output and routine(burgermass,nick) - X
+
+- graph fuel value min max adj(cj) - X
+- graph injector duration value min/max(cj) - X
+- Adjustable Led display every bool value can be on display(timdogg,cj,burgermass,civic_Tsi)-X
+- 3 Extra overlays with any sensor input(cj,burgermass,allan) - X
+	-Min/Max/Avg/Last Sample - X
+	-Conditions for logging- X
+	-Coloring of cells - X
+- Special sensors - X(tuner only)
+	EGT 1-4 - X
+	EGT Avg - X
+	Backpressure - X
+	Fuelpressure - X
+	Extra IAT - X
+- license based datadisplay - X
+- Bug with Plot start & Plot end div by zero(thomas) - X
+- graph display boost value bug - X
+- Slect wrong emulator and press auto-scan, cont loop 50% cpu(nick)
+	- check if port exist before auto-scan - X
+- After map copy ask load/map scalar copy(frank) - X
+- led display only update if value changed(calvin) - X
+- vtec min load use mapvalue control(calvin) - X
+- overflow rpm rows - X
+- LS highcam only map checkbox and disable vtec(timdog) -  X
+- closeloop min/max in mutliplier mode(dave) - X
+- peak button didn't work(burgermass) - X
+- battery voltage display peak value is always 0, use min value(civic_tsi) -X
+
+---------------------------
+0.0.2.2 r3
+
+- rom 0.0.62
+	-Patch for scalar loverflow(when adjustable rpm/map scalars)(98vtec,cj,brianMarshall)-
+		-Value less then column[0] -X
+		-Value greater then column[Last]
+	-anti-lag enable/disable input selector to prevent bogging(burgermass) - X
+	-Fixed ign cylinder bug -X	
+	-Clean up rev routine	- X
+	-Fuelcut min rpm - X
+	-Fuelcut restore rpm - X
+		- fuelcut if u rev to 2000 rpm at idle(cj,sypontic) - FIXED, Tested by Nick
+	-Clrb 23dh - X
+	-Bug that fuelcut didn't go to 0 FV -X
+	-Disable Fuelcut for tipout tuning(cj, burgermass) - X
+
+- rom 0.0.63
+	-Burnout control, vss >0 disable(cj) - X
+	-gear correction, load condition(civic_tsi) - X
+
+- Insert column only copy one map(civic_tsi)-X
+- upload rom on connect,setting(civic4g) - X
+- anti-lag checkbox - X
+- map trace didn't make a differance between secondary and primary maps(cj) - X
+- copy maps + scalars bug(cj) - X
+- tipout rpm not saving(miller) -
+- control map sensor tab use(cj) - X
+- Min fuelcut value for roms(250mbar) - X
+- NA scalar finish(burgermass) - X
+- don't clear peak values on reconnect(hackish) - X
+- fuelcut mBar upgrade to 250mbar - X
+- check if vss peak is saving in correct unit(mafdark) - X
+
+------------
+v 0.0.2.2r4
+- rom 0.0.63
+	-Burnout control, vss >0 disable(cj) - X
+	-gear correction, load condition(civic_tsi) - X
+	-table for fuelcut(tuner only)(burgermass)
+
+- delta rpm/vss minimal log - X
+- overlay icons(nate) - X
+- column insert/delte icons(nate) - X
+- overlay text drop down menu(cj) - X
+	-no text if item is disabled - X
+- alpha-n scalar setup(frank) -X
+- injector offset + and - value, injector cal tool - X
+- test basemap creator injector size, injector cal tool - X
+	-Validation that injector size is not 0(basemap creator) - X
+	-validation injector calibration parameter - X
+	-validation injector calibration tool - X
+- tab order alph-n scalar setup(cj) - X
+- fuelcut mBar upgrade to 200mbar - X
+- bug fuelcut not saving with cal file - X
+- clear settings folder on webupdate/force update(user profile) - X
+------------
+v 0.0.2.2 r5
+- fuel reload after save(cj)- X
+- Force ICM error disable(cj, rstech) - X
+	-Used for ICM replacement box - X
+- Load value for gear corrections(civic_Tsi) - X
+- settings bug 1(road xy) -X 
+	Start eCtune
+	hit settings
+	click tab emulator comm
+	click tab datalogging comm
+	Has to be in this order 
+- Setting bug 2(road xy) - X
+	Wideband tab afr/lambda radio button
+- Clear Selected Cells afr overlay(civic_4g) - X
+- parse log on load(civic_tsi) - X
+	-afr overlay - X
+	-custom overlay - X
+- expection save markers - X
+  an exception that the marker is out of range(civic_tsi) - ???
+	Record a log, then move the marker anywhere in the graph and start recording another log. 
+	Steps:
+	Connect datalogging
+	Start Recording
+	Stop Recording (let say 30s)
+	Open Recording
+	Move marker somewhere in the graph
+	Start recording again
+- Disable f7/f8 when VE tables active(allan/nick) - X
+- In the boostcut settings, the frame around the boost cut parameter should include the Enable Boost Cut checkbox, because it could be confusing that the temperature vs boostcut is only for the DTC(nick) - X
+- 4 bar omni/honda/xenocron value(cj) - X
+---------------------------------------------------------------------------------
+v 0.0.2.2 r6
+- Rom 0.0.63
+	ICM patch remove - X
+-Expiry update
+---------------------------------------------------------------------------------
+0.0.2.2 r7
+-Rom 0.0.62 
+	-Fuelcut map fix/closeloop
+-Rom 0.0.63
+	-Fuelcut map fix/closeloop
+
+- settings farh/celcuis switch crash bug(civic_4g) -X
+- boostcut checkbox not working(frank) - X
+- sensor pane bug, clicking on column header(civic4g) - X
+- multiplier mode new rom overall fuel trim 0 should be 1(xenocron) - X
+- conditional datalog on menu(forum requrest) - X
+- 2nd column max map value(xenocron)-> Correct working - X
+	don't change to higher then right or lower then left - X
+- disable ICM checkbox(cj/frank) - X
+- disable ICM checkbox sensor options(cj/frank)- X
+- tranny selection with basemap creater(civic_Tsi) - X
+- Smart-tracking for PRO version(ectune product compare matrix) - X
+- min ect for long term closeloop correction - X
+---------------------------------------------------------------------------------
+-0.0.2.2r8
+-rom 0.0.64
+	- table for fuelcut(tuner only)(burgermass)	-
+	- A11 egr backwards(allan)			-X
+		add up grade to rom loader		-X
+	-min ect for long term closeloop correction 	-X
+	-Add code for min ect for closeloop correction 	-
+	-closeloop not working above 2k rpm(frank)	- X
+	-closeloop showing 1.02/2% correction during disable - 
+	-Fuelcut min tps patch - X
+	-GPO multiplier(burgermass)
+
+- DEMON	
+	-Demon dataloging protocol(simple)		-
+	-Demon dataloging protocol(advance)		-
+	-Demon emulator protocol			-X
+	-Demon baud selector 	
+		-Internal use only			-		
+	-Demon frame amount datalog(advance)		-
+	-Demon stop on emulator request			-
+	-UI update settings for demon			-X
+
+-Direct serial logging
+	-PLX		-X
+	-AEM		-X
+	-TE		-X
+	-Zeitronix	-X
+	-FJO		-X
+
+- Innovate serial logging bug - X
+- Conditional logging folder bug - X
+- fts input grey-out bug(boostedeh2) - X
+- fts fts anti-lag grey-out bug(boostedeh2) - X
+- burnout input grey-out bug()
+	-Updated input control	- X
+- RPM lunch control validation bug - No bug found
+- load type in datalogging grid(cj) - X
+- force update can't find base_rom folder, Pro Version(blowngsr1) -X
+
+---------------
+
+-0.0.2.2r9
+- Bug with Get Rom from Ostrich 1(IMPORTANT) - X
+- wideband port not saving(timdogg) - X
+- validation settings screen(crx303) - X
+- Zeitronix Wideband fixed and working - X
+
+---------------
+
+0.0.2.3 r0
+
+-rom 0.0.64
+	- table for fuelcut(tuner only)(burgermass)	-
+	- A11 egr backwards(allan)			-X
+		add up grade to rom loader		-X
+	-min ect for long term closeloop correction 	-X
+	-Fuelcut map fix/closeloop	- X
+	-closeloop showing 1.02/2% correction during disable - X
+	-Fuelcut variable fix - X
+	-
+
+
+- version set/crack - X
+- Tuner ver check load create basemap in PRO - X
+- analog 1 sensor bug Pro version(jaredKaren) - X
+- update UI for new injector multiplier system - X
+- disable FV for rom 64 new fueling - X
+- Bug fts gear based entry(sj_performance) - X
+
+----------------
+
+0.0.2.3 r1
+
+Demon:
+	- Demon RPT		- X
+	- Demon Datalogging	- X
+	- Demon Serial PRO
+
+- atl vtec output a20(burgermass) - working - X
+- peak value boost display if not in boost it doesn't show peak label(cj/burgermass) - X
+- different AFR on export to csv(afr variable)(sean) - X
+- CVS export afr(sean)- X
+- +/- fuel value buttons overall adjust in 64 rom in injector calibration(frank/cj/burgermass) - X
+- +/- fuel value buttons overall adjust in 64 rom at shortcut buttons(frank/cj/burgermass) - X
