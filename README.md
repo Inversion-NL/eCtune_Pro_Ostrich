@@ -9,5 +9,5 @@ eCtune PRI edition(Pro_Ostrich) 0.0.2.3 r17
 
 - Ectune Tuner : [LINK][]
 
-[HERE]: <https://github.com/bouletmarc/eCtune_Pro_Ostrich/archive/master.zip>
-[LINK]: <https://github.com/bouletmarc/eCtune_Tuner>
+[HERE]: <https://github.com/Inversion-NL/eCtune_Pro_Ostrich/archive/master.zip>
+[LINK]: <https://github.com/Inversion-NL/eCtune_Tuner>
